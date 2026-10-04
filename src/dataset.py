@@ -7,6 +7,8 @@ from torchvision import transforms
 from PIL import Image
 from random import random
 
+#The is dataset pipeline for multiclass segmentation
+
 class SegmentationDataset(Dataset):
     def __init__(self, image_dir, mask_dir, transform=None, target_size=(256, 256)):
         self.image_dir = image_dir
